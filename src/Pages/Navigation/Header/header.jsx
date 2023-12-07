@@ -23,7 +23,7 @@ function Header() {
         {LiList}
       </ul>
       <div className={Open?`ThreeIcons`:`OpenIcons`}>
-        <BsFacebook className="Icons"/>
+        <a href='https://www.facebook.com/profile.php?id=100048657914897&locale=ru_RU'><BsFacebook className="Icons"/></a>
         <BsInstagram className="Icons"/>
         <BsTwitter className="Icons"/>
       </div>

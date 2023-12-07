@@ -1,0 +1,119 @@
+.Home{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10vh;
+}
+
+.HomeLogo{
+    width: 200px;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .container h1:nth-child(1)  {
+    color: #000000;
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 0 35%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170px;
+    animation: type 2s steps(40,end) forwards;
+  }
+
+  .container h1:nth-child(3)  {
+    color: #000000;
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 0 55%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 170px;
+    animation: type 2s steps(40,end) forwards;
+  }
+  
+  .container h1:nth-child(2) {
+    opacity: 0;
+    font-family: "Work Sans", sans-serif;
+    margin: 0 auto auto auto;
+    background: linear-gradient(to right, #e28743, #ffd4b1,  #f18a3b);
+    font-weight: 500;
+    font-size: 60px;  
+    width: 330px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+  }
+  
+  @keyframes shring-animation {
+    0% {
+      background-position: 0 0;
+      opacity: 0;
+      width: 0;
+    }
+    1% {
+      background-position: 0 0;
+      opacity: 1;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+    50% {
+      background-position: 150px 0;
+      opacity: 1;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+    100% {
+      background-position: 400px 0;
+      opacity: 1;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
+  
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid rgb(0, 0, 0);
+  }
+  100%{
+    border-right: none;
+  }
+}
+  
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width:400px) {
+  .container h1:nth-child(1) {
+    margin: 0  0  0  100px;
+  }
+  .container h1:nth-child(3){
+    margin: 0 0 0 130px;
+  } 
+}
+
+@media (max-width:345px) {
+  .container h1:nth-child(2){
+    width: 300px;
+  }
+}

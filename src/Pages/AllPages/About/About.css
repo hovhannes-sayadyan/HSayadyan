@@ -1,0 +1,128 @@
+.About{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.AboutTitle{
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+}
+
+.AboutTwoDivs{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.AboutImgDiv{
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.AboutTextDiv{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.AboutText{
+    width: 80%;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.AboutTitle2{
+    font-size: 35px;
+    color: white;
+}
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+  
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@media (max-width:1030px) {
+    .About{
+        height:  auto;
+    }
+    .AboutTwoDivs{
+        flex-wrap: wrap;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 745px) {
+    .AboutImgDiv{
+        width: auto;
+    }
+    .AboutText{
+        width: auto;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .AboutTitle2{
+        font-size: 25px;
+    }
+    .AboutTwoDivs{
+        height: 220vh;
+    }
+    .AboutText{
+        width: 95vw;
+    }
+    .AboutTitle{
+        width: auto;
+    }
+}
+
+@media (max-width: 410px) {
+    .AboutText{
+        width: 85vw;
+    }
+    .AboutTitle2{
+        font-size: 20px;
+        width: auto;
+    }
+}
+
+@media (max-width: 330px) {
+    .AboutTitle2{
+        font-size: 15px;
+    }
+}

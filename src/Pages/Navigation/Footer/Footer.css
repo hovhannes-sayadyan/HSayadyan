@@ -1,0 +1,207 @@
+.Contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: burlywood;
+}
+
+.ContactIconDiv{
+    width: 40%;
+    height: 100vh;
+}
+
+.ContactIconsDivs{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+.ContactIconsDiv{
+    width: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.ContactIcons{
+    width: 35px;
+    height: 35px;
+    color: burlywood;
+}
+
+.h4 {
+    max-width: 100vw;
+    color: rgb(232, 241, 229);
+}
+
+.h3{
+    color: rgb(232, 241, 229);
+}
+
+.h1{
+    color: rgb(232, 241, 229);
+}
+
+.ContactTextField{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.NameMail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.White{
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.NameInput2{
+    width: 400px;
+    height: 50px;
+    background-color: burlywood;
+    border: none;
+    border-bottom: 4px solid white;
+    color: rgb(232, 241, 229);
+    font-size: 22px;
+}
+
+.NameInput2:focus{
+    outline: none;
+}
+
+.NameInput2::placeholder{
+    color: rgb(232, 241, 229);
+}
+
+.NameInput2:hover{
+    background-color: rgb(172, 138, 93);
+    transition: .5s all;
+}
+
+.MailInput2{
+    width: 400px;
+    height: 50px;
+    background-color: burlywood;
+    border: none;
+    border-bottom: 4px solid white;
+    color: rgb(232, 241, 229);
+    font-size: 22px;
+}
+
+.MailInput2:focus{
+    outline: none;
+}
+
+.MailInput2::placeholder{
+    color: rgb(232, 241, 229);
+}
+
+.MailInput2:hover{
+    background-color: rgb(172, 138, 93);
+    transition: .5s all;
+}
+
+.LetterInput2{
+    width: 400px;
+    height: 200px;
+    background-color: burlywood;
+    border: none;
+    border-bottom: 4px solid white;
+    color: rgb(232, 241, 229);
+    font-size: 22px;
+    transition: .5s all;
+}
+
+.LetterInput2:focus{
+    outline: none;
+}
+
+.LetterInput2::placeholder{
+    color: rgb(232, 241, 229);
+}
+
+.LetterInput2:hover{
+    background-color: rgb(172, 138, 93);
+    transition: .5s all;
+}
+
+
+.Submit2{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(232, 241, 229);
+    color: burlywood;
+    transition: 0.5s all;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.Submit:hover{
+    background-color: rgb(172, 138, 93);
+    color: rgb(232, 241, 229);
+    transition: 0.5s all;
+}
+
+@media (max-width:1000px) {
+    .NameMail{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .NameInput2{
+        width: 100%;
+    }
+    .MailInput2{
+        width: 100%;
+    }
+    .LetterInput2{
+        width: 100%;
+    }
+}
+
+@media (max-width:650px) {
+    .Contact{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        display: grid;
+        place-items: center;
+    }
+    .White{
+        width: 100%;
+    }
+}
+
+@media (max-width:350px) {
+    .Contact{
+        display: flex;
+        flex-direction: column;
+        place-items: start;
+    }
+    .White{
+        width: 88vw;
+        position: relative;
+        left: 70px;
+    }
+}

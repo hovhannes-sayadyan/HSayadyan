@@ -1,0 +1,20 @@
+.ProjectsDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;
+    border-bottom: 10px solid burlywood;
+}
+
+.ProjectsTitle{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.ProjectsTitle h1{
+    color: burlywood;
+    font-size: 35px;
+}

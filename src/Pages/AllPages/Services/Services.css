@@ -1,0 +1,23 @@
+.ServicesDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.ServicesTitle{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.ServicesTitle h1{
+    color: burlywood;
+    font-size: 35px;
+}
+
+.Arrows{
+    font-size: 30px;
+}

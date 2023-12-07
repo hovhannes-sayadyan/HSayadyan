@@ -1,0 +1,20 @@
+.ServicesAllBig{
+    padding-top: 15vh;
+}
+
+.ServicesAll{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding-bottom: 30px;
+
+}
+
+.ServH1{
+    font-size: 35px;
+    color: burlywood;
+    text-align: center;
+}

@@ -15,7 +15,7 @@ function Contact() {
           </div>
           <div>
             <h3 className="h3">Address</h3>
-            <h4 className="h4">City Artshat, Yrevan-Yeraskh 28/1</h4>
+            <h4 className="h4">City Artshat</h4>
           </div>
         </div>
         <div className="ContactIconsDivs">
@@ -24,17 +24,7 @@ function Contact() {
           </div>
           <div>
             <h3 className="h3">Phone</h3>
-            <h4 className="h4">+374 94 08 16 56</h4>
-            <h4 className="h4">+374 93 05 11 61</h4>
-          </div>
-        </div>
-        <div className="ContactIconsDivs">
-          <div className="ContactIconsDiv">
-            <IoMail className="ContactIcons" />
-          </div>
-          <div>
-            <h3 className="h3">Mail</h3>
-            <h4 className="h4">agromarket.eu@gmail.com</h4>
+            <h4 className="h4">+374 94 00 01 80</h4>
           </div>
         </div>
       </div>
@@ -71,7 +61,7 @@ function Contact() {
           const GMail = document.querySelector(`.MailInput`).value
           const body = document.querySelector(`.LetterInput`)?.value
           const text = `Hello I'am ${subject}. ${body}. My G-Mail is ${GMail}`
-          a.href = `mailto:agromarket.eu@gmail.com?subject= Letter from WebSite&body=${text}`
+          a.href = `mailto:developer.hovhannes.2010@gmail.com?subject= Letter from WebSite&body=${text}`
         }}>SUBMIT</a>
       </div>
        </div>

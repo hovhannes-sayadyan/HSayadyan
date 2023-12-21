@@ -63,7 +63,8 @@ function Contact() {
               const GMail = document.querySelector(`.MailInput2`).value;
               const body = document.querySelector(`.LetterInput2`)?.value;
               const text = `Hello I'am ${subject}. ${body}. My G-Mail is ${GMail}`;
-              a.href = `developer.hovhannes.2010@gmail.com?subject= Letter from WebSite&body=${text}`;
+              a.href = `hhovhsnnes.sayadyan.ithink@gmail.com?subject= Letter from WebSite&body=${text}`;
+              cosole.log(`h`)
             }}
           >
             SUBMIT

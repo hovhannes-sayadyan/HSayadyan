@@ -72,7 +72,7 @@
     align-items: center;
 }
 
-.NameInput2{
+.NameInput{
     width: 400px;
     height: 50px;
     background-color: burlywood;
@@ -82,20 +82,20 @@
     font-size: 22px;
 }
 
-.NameInput2:focus{
+.NameInput:focus{
     outline: none;
 }
 
-.NameInput2::placeholder{
+.NameInput::placeholder{
     color: rgb(232, 241, 229);
 }
 
-.NameInput2:hover{
+.NameInput:hover{
     background-color: rgb(172, 138, 93);
     transition: .5s all;
 }
 
-.MailInput2{
+.MailInput{
     width: 400px;
     height: 50px;
     background-color: burlywood;
@@ -105,11 +105,11 @@
     font-size: 22px;
 }
 
-.MailInput2:focus{
+.MailInput:focus{
     outline: none;
 }
 
-.MailInput2::placeholder{
+.MailInput::placeholder{
     color: rgb(232, 241, 229);
 }
 
@@ -118,7 +118,7 @@
     transition: .5s all;
 }
 
-.LetterInput2{
+.LetterInput{
     width: 400px;
     height: 200px;
     background-color: burlywood;
@@ -129,21 +129,21 @@
     transition: .5s all;
 }
 
-.LetterInput2:focus{
+.LetterInput:focus{
     outline: none;
 }
 
-.LetterInput2::placeholder{
+.LetterInput::placeholder{
     color: rgb(232, 241, 229);
 }
 
-.LetterInput2:hover{
+.LetterInput:hover{
     background-color: rgb(172, 138, 93);
     transition: .5s all;
 }
 
 
-.Submit2{
+.Submit{
     width: 150px;
     height: 40px;
     background-color: rgb(232, 241, 229);
@@ -169,13 +169,13 @@
         align-items: center;
         gap: 30px;
     }
-    .NameInput2{
+    .NameInput{
         width: 100%;
     }
-    .MailInput2{
+    .MailInput{
         width: 100%;
     }
-    .LetterInput2{
+    .LetterInput{
         width: 100%;
     }
 }

@@ -8,14 +8,14 @@ function Contact() {
   return (
     <div className="Contact">
       <div className="ContactIconDiv">
-        <h1 className="h1">CONTACT `</h1>
+        <h1 className="h1">CONTACT WITH US `</h1>
         <div className="ContactIconsDivs">
           <div className="ContactIconsDiv">
             <FaLocationDot className="ContactIcons" />
           </div>
           <div>
-            <h3 className="h3">ADRESS՝</h3>
-            <h4 className="h4">TOWN ARTASHAT</h4>
+            <h3 className="h3">Address</h3>
+            <h4 className="h4">City Artshat, Yrevan-Yeraskh 28/1</h4>
           </div>
         </div>
         <div className="ContactIconsDivs">
@@ -23,54 +23,58 @@ function Contact() {
             <BsTelephoneFill className="ContactIcons" />
           </div>
           <div>
-            <h3 className="h3">PHONE՝</h3>
-            <h4 className="h4">+374 94 00 01 80</h4>
+            <h3 className="h3">Phone</h3>
+            <h4 className="h4">+374 94 08 16 56</h4>
+            <h4 className="h4">+374 93 05 11 61</h4>
+          </div>
+        </div>
+        <div className="ContactIconsDivs">
+          <div className="ContactIconsDiv">
+            <IoMail className="ContactIcons" />
+          </div>
+          <div>
+            <h3 className="h3">Mail</h3>
+            <h4 className="h4">agromarket.eu@gmail.com</h4>
           </div>
         </div>
       </div>
       <div className="ContactTextField">
-        <div className="White">
-          <h1 className="h1">LETTER՝</h1>
-          <div className="NameMail">
-            <input
-              type="text"
-              placeholder="NAME"
-              name="Name"
-              className="NameInput2"
-            />
-            <input
-              type="text"
-              placeholder="E - MAIL"
-              name="G-Mail"
-              className="MailInput2"
-            />
-          </div>
-          <textarea
-            onChange={() => {
-              const body = document.querySelector(`.LetterInput2`)?.value;
-              console.log(body);
-            }}
+       <div className="White">
+        <h1 className="h1">ENTER YOUR LETTER</h1>
+       <div className="NameMail">
+          <input
             type="text"
-            placeholder="LETTER"
-            name="Letter"
-            className="LetterInput2"
-          ></textarea>
-          <a
-            className="Submit2"
-            onClick={() => {
-              const a = document.querySelector(`.Submit2`);
-              const subject = document.querySelector(`.NameInput2`).value;
-              const GMail = document.querySelector(`.MailInput2`).value;
-              const body = document.querySelector(`.LetterInput2`)?.value;
-              const text = `Hello I'am ${subject}. ${body}. My G-Mail is ${GMail}`;
-              a.href = `hhovhsnnes.sayadyan.ithink@gmail.com?subject= Letter from WebSite&body=${text}`;
-              cosole.log(`h`)
-            }}
-          >
-            SUBMIT
-          </a>
+            placeholder="Name"
+            name="Name"
+            className="NameInput"
+          />
+          <input
+            type="text"
+            placeholder="Gmail"
+            name="G-Mail"
+            className="MailInput"
+          />
         </div>
+        <textarea
+        onChange={() => {
+          const body = document.querySelector(`.LetterInput`)?.value
+          console.log(body);
+        }}
+          type="text"
+          placeholder="Write your letter"
+          name="Letter"
+          className="LetterInput"
+        ></textarea>
+        <a className="Submit" onClick={()=>{
+          const a = document.querySelector(`.Submit`)
+          const subject = document.querySelector(`.NameInput`).value
+          const GMail = document.querySelector(`.MailInput`).value
+          const body = document.querySelector(`.LetterInput`)?.value
+          const text = `Hello I'am ${subject}. ${body}. My G-Mail is ${GMail}`
+          a.href = `mailto:agromarket.eu@gmail.com?subject= Letter from WebSite&body=${text}`
+        }}>SUBMIT</a>
       </div>
+       </div>
     </div>
   );
 }
